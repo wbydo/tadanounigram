@@ -1,1 +1,4 @@
 build/
+env.py
+__pycache__
+*egg-info
