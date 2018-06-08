@@ -10,7 +10,7 @@ Welcome to tadanounigram's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-.. autofunction:: tadanounigram.hoge
+.. autofunction:: tadanounigram.mozi2position
 
 Indices and tables
 ==================
