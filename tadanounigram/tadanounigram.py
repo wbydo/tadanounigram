@@ -19,7 +19,7 @@ MOJIBAN = [
 ALL_KATAKANA = ''.join(MOJIBAN)
 
 _dir = os.path.dirname(__file__)
-_path = os.path.join(_dir, 'lib', 'count_100000sentence.pickle')
+_path = os.path.join(_dir, '../lib', 'count_100000sentence.pickle')
 
 with open(_path, 'rb') as f:
     _COUNT = pickle.load(f)
@@ -43,7 +43,7 @@ def position2mozi(x, y):
     return MOJIBAN[x][y]
 
 def check_existence(mozi):
-    if mozi in _ALL_KATAKANA:
+    if mozi in ALL_KATAKANA:
         return True
     else:
         return False
