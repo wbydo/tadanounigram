@@ -19,7 +19,7 @@ MOJIBAN = [
 ALL_KATAKANA = ''.join(MOJIBAN)
 
 _dir = os.path.dirname(__file__)
-_path = os.path.join(_dir, '../lib', 'count_100000sentence.pickle')
+_path = os.path.join(_dir, 'lib', 'count_100000sentence.pickle')
 
 with open(_path, 'rb') as f:
     _COUNT = pickle.load(f)
