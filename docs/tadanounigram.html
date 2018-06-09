@@ -1,0 +1,446 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>tadanounigram package &mdash; tadanounigram  ドキュメント</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="検索" href="search.html" />
+    <link rel="prev" title="tadanounigram documentation" href="index.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> tadanounigram
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Package references</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">tadanounigram package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-tadanounigram">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">tadanounigram</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>tadanounigram package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/tadanounigram.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="tadanounigram-package">
+<h1>tadanounigram package<a class="headerlink" href="#tadanounigram-package" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="module-tadanounigram">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-tadanounigram" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<dl class="data">
+<dt id="tadanounigram.ALL_KATAKANA">
+<code class="descclassname">tadanounigram.</code><code class="descname">ALL_KATAKANA</code><em class="property"> = 'アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲンー'</em><a class="headerlink" href="#tadanounigram.ALL_KATAKANA" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>文字盤に含まれる文字を連結したもの</p>
+<p class="rubric">Example</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">tadanounigram</span><span class="o">.</span><span class="n">ALL_KATAKANA</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="go">ア</span>
+<span class="go">イ</span>
+<span class="go">ウ</span>
+<span class="go">エ</span>
+<span class="go">オ</span>
+<span class="go">カ</span>
+<span class="go">⋮</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="tadanounigram.Frequency">
+<em class="property">class </em><code class="descclassname">tadanounigram.</code><code class="descname">Frequency</code><a class="reference internal" href="_modules/tadanounigram.html#Frequency"><span class="viewcode-link">[ソース]</span></a><a class="headerlink" href="#tadanounigram.Frequency" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>ベースクラス: <a class="reference internal" href="#tadanounigram.Frequency" title="tadanounigram.Frequency"><code class="xref py py-class docutils literal notranslate"><span class="pre">tadanounigram.Frequency</span></code></a></p>
+<p>文字の出現度数を表すクラス</p>
+<dl class="attribute">
+<dt id="tadanounigram.Frequency.target">
+<code class="descname">target</code><a class="headerlink" href="#tadanounigram.Frequency.target" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p><em>int</em> -- 対象文字の出現度数</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tadanounigram.Frequency.total">
+<code class="descname">total</code><a class="headerlink" href="#tadanounigram.Frequency.total" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p><em>int</em> -- 全文字の出現度数</p>
+</dd></dl>
+
+<div class="admonition note">
+<p class="first admonition-title">注釈</p>
+<p class="last"><a class="reference external" href="https://docs.python.org/ja/3.6/library/collections.html#collections.namedtuple" title="(in Python v3.6)"><code class="xref py py-func docutils literal notranslate"><span class="pre">collections.namedtuple()</span></code></a> で生成したクラス</p>
+</div>
+<div class="admonition seealso">
+<p class="first admonition-title">参考</p>
+<p class="last"><a class="reference external" href="https://docs.python.org/ja/3.6/library/collections.html#collections.namedtuple" title="(in Python v3.6)"><code class="xref py py-func docutils literal notranslate"><span class="pre">collections.namedtuple()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="tadanounigram.MOJIBAN">
+<code class="descclassname">tadanounigram.</code><code class="descname">MOJIBAN</code><em class="property"> = ['アイウエオ', 'カキクケコ', 'サシスセソ', 'タチツテト', 'ナニヌネノ', 'ハヒフヘホ', 'マミムメモ', 'ヤユヨ', 'ラリルレロ', 'ワヲンー']</em><a class="headerlink" href="#tadanounigram.MOJIBAN" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>文字盤を表すリスト</p>
+<p class="rubric">Example</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">MOJIBAN</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+<span class="go">&#39;ア&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">MOJIBAN</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span>
+<span class="go">&#39;エ&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">MOJIBAN</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+<span class="go">&#39;タ&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="tadanounigram.Position">
+<em class="property">class </em><code class="descclassname">tadanounigram.</code><code class="descname">Position</code><a class="reference internal" href="_modules/tadanounigram.html#Position"><span class="viewcode-link">[ソース]</span></a><a class="headerlink" href="#tadanounigram.Position" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>ベースクラス: <a class="reference internal" href="#tadanounigram.Position" title="tadanounigram.Position"><code class="xref py py-class docutils literal notranslate"><span class="pre">tadanounigram.Position</span></code></a></p>
+<p>文字盤の座標を表すクラス</p>
+<dl class="attribute">
+<dt id="tadanounigram.Position.x">
+<code class="descname">x</code><a class="headerlink" href="#tadanounigram.Position.x" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p><em>int</em> -- 列番号</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tadanounigram.Position.y">
+<code class="descname">y</code><a class="headerlink" href="#tadanounigram.Position.y" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p><em>int</em> -- 行番号</p>
+</dd></dl>
+
+<div class="admonition note">
+<p class="first admonition-title">注釈</p>
+<p class="last"><a class="reference external" href="https://docs.python.org/ja/3.6/library/collections.html#collections.namedtuple" title="(in Python v3.6)"><code class="xref py py-func docutils literal notranslate"><span class="pre">collections.namedtuple()</span></code></a> で生成したクラス</p>
+</div>
+<div class="admonition seealso">
+<p class="first admonition-title">参考</p>
+<p class="last"><a class="reference external" href="https://docs.python.org/ja/3.6/library/collections.html#collections.namedtuple" title="(in Python v3.6)"><code class="xref py py-func docutils literal notranslate"><span class="pre">collections.namedtuple()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="tadanounigram.check_existence">
+<code class="descclassname">tadanounigram.</code><code class="descname">check_existence</code><span class="sig-paren">(</span><em>mozi</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tadanounigram.html#check_existence"><span class="viewcode-link">[ソース]</span></a><a class="headerlink" href="#tadanounigram.check_existence" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>文字を引数に取り、文字盤に存在するかどうかを判定する関数</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">パラメータ:</th><td class="field-body"><strong>mozi</strong> (<a class="reference external" href="https://docs.python.org/ja/3.6/library/stdtypes.html#str" title="(in Python v3.6)"><em>str</em></a>) -- 文字</td>
+</tr>
+<tr class="field-even field"><th class="field-name">戻り値:</th><td class="field-body">存在するなら <code class="docutils literal notranslate"><span class="pre">True</span></code> ,存在しなければ <code class="docutils literal notranslate"><span class="pre">False</span></code> を返す。</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">戻り値の型:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/ja/3.6/library/functions.html#bool" title="(in Python v3.6)">bool</a></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">注釈</p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">mozi</span> <span class="pre">in</span> <span class="pre">tadanounigram.ALL_KATAKANA</span></code> と等価</p>
+</div>
+<div class="admonition seealso">
+<p class="first admonition-title">参考</p>
+<p class="last"><a class="reference internal" href="#tadanounigram.ALL_KATAKANA" title="tadanounigram.ALL_KATAKANA"><code class="xref py py-data docutils literal notranslate"><span class="pre">tadanounigram.ALL_KATAKANA</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="tadanounigram.frequency">
+<code class="descclassname">tadanounigram.</code><code class="descname">frequency</code><span class="sig-paren">(</span><em>mozi</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tadanounigram.html#frequency"><span class="viewcode-link">[ソース]</span></a><a class="headerlink" href="#tadanounigram.frequency" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>文字を引数に取り、出現頻度を返す関数。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">パラメータ:</th><td class="field-body"><strong>mozi</strong> (<a class="reference external" href="https://docs.python.org/ja/3.6/library/stdtypes.html#str" title="(in Python v3.6)"><em>str</em></a>) -- 文字</td>
+</tr>
+<tr class="field-even field"><th class="field-name">戻り値:</th><td class="field-body">出現頻度</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">戻り値の型:</th><td class="field-body"><a class="reference internal" href="#tadanounigram.Frequency" title="tadanounigram.Frequency">tadanounigram.Frequency</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/ja/3.6/library/exceptions.html#ValueError" title="(in Python v3.6)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">ValueError</span></code></a> -- <a class="reference internal" href="#tadanounigram.check_existence" title="tadanounigram.check_existence"><code class="xref py py-func docutils literal notranslate"><span class="pre">tadanounigram.check_existence()</span></code></a> が <code class="docutils literal notranslate"><span class="pre">False</span></code> だと発生</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">参考</p>
+<p class="last"><a class="reference internal" href="#tadanounigram.check_existence" title="tadanounigram.check_existence"><code class="xref py py-func docutils literal notranslate"><span class="pre">tadanounigram.check_existence()</span></code></a>
+<a class="reference internal" href="#tadanounigram.Frequency" title="tadanounigram.Frequency"><code class="xref py py-class docutils literal notranslate"><span class="pre">tadanounigram.Frequency</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="tadanounigram.mozi2position">
+<code class="descclassname">tadanounigram.</code><code class="descname">mozi2position</code><span class="sig-paren">(</span><em>mozi</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tadanounigram.html#mozi2position"><span class="viewcode-link">[ソース]</span></a><a class="headerlink" href="#tadanounigram.mozi2position" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>文字から座標を求める関数。
+引数として <a class="reference internal" href="#tadanounigram.MOJIBAN" title="tadanounigram.MOJIBAN"><code class="xref py py-data docutils literal notranslate"><span class="pre">tadanounigram.MOJIBAN</span></code></a> や
+<a class="reference internal" href="#tadanounigram.ALL_KATAKANA" title="tadanounigram.ALL_KATAKANA"><code class="xref py py-data docutils literal notranslate"><span class="pre">tadanounigram.ALL_KATAKANA</span></code></a> に含まれるものを想定。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">パラメータ:</th><td class="field-body"><strong>mozi</strong> (<a class="reference external" href="https://docs.python.org/ja/3.6/library/stdtypes.html#str" title="(in Python v3.6)"><em>str</em></a>) -- カタカナ1文字。</td>
+</tr>
+<tr class="field-even field"><th class="field-name">戻り値:</th><td class="field-body">文字盤の座標</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">戻り値の型:</th><td class="field-body"><a class="reference internal" href="#tadanounigram.Position" title="tadanounigram.Position">tadanounigram.Position</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/ja/3.6/library/exceptions.html#ValueError" title="(in Python v3.6)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">ValueError</span></code></a> -- 引数が <a class="reference internal" href="#tadanounigram.MOJIBAN" title="tadanounigram.MOJIBAN"><code class="xref py py-data docutils literal notranslate"><span class="pre">tadanounigram.MOJIBAN</span></code></a> や
+<a class="reference internal" href="#tadanounigram.ALL_KATAKANA" title="tadanounigram.ALL_KATAKANA"><code class="xref py py-data docutils literal notranslate"><span class="pre">tadanounigram.ALL_KATAKANA</span></code></a> に含まれない文字の場合に発生。</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="tadanounigram.position2mozi">
+<code class="descclassname">tadanounigram.</code><code class="descname">position2mozi</code><span class="sig-paren">(</span><em>x</em>, <em>y</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tadanounigram.html#position2mozi"><span class="viewcode-link">[ソース]</span></a><a class="headerlink" href="#tadanounigram.position2mozi" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>座標を引数に取り、文字盤上の文字を返す関数。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">パラメータ:</th><td class="field-body"><ul class="first simple">
+<li><strong>x</strong> (<a class="reference external" href="https://docs.python.org/ja/3.6/library/functions.html#int" title="(in Python v3.6)"><em>int</em></a>) -- 列番号</li>
+<li><strong>y</strong> (<a class="reference external" href="https://docs.python.org/ja/3.6/library/functions.html#int" title="(in Python v3.6)"><em>int</em></a>) -- 行番号</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">戻り値:</th><td class="field-body"><p class="first">文字盤上の文字</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">戻り値の型:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/ja/3.6/library/stdtypes.html#str" title="(in Python v3.6)">str</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">注釈</p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">tadanounigram.MOJIBAN[x][y]</span></code> と等価</p>
+</div>
+<div class="admonition seealso">
+<p class="first admonition-title">参考</p>
+<p class="last"><a class="reference internal" href="#tadanounigram.MOJIBAN" title="tadanounigram.MOJIBAN"><code class="xref py py-data docutils literal notranslate"><span class="pre">tadanounigram.MOJIBAN</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="tadanounigram.probability">
+<code class="descclassname">tadanounigram.</code><code class="descname">probability</code><span class="sig-paren">(</span><em>mozi</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tadanounigram.html#probability"><span class="viewcode-link">[ソース]</span></a><a class="headerlink" href="#tadanounigram.probability" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>文字を引数に取り、出現確率を返す関数。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">パラメータ:</th><td class="field-body"><strong>mozi</strong> (<a class="reference external" href="https://docs.python.org/ja/3.6/library/stdtypes.html#str" title="(in Python v3.6)"><em>str</em></a>) -- 文字</td>
+</tr>
+<tr class="field-even field"><th class="field-name">戻り値:</th><td class="field-body">出現確率</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">戻り値の型:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/ja/3.6/library/functions.html#float" title="(in Python v3.6)">float</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/ja/3.6/library/exceptions.html#ValueError" title="(in Python v3.6)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">ValueError</span></code></a> -- <a class="reference internal" href="#tadanounigram.check_existence" title="tadanounigram.check_existence"><code class="xref py py-func docutils literal notranslate"><span class="pre">tadanounigram.check_existence()</span></code></a> が <code class="docutils literal notranslate"><span class="pre">False</span></code> だと発生</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">参考</p>
+<p class="last"><a class="reference internal" href="#tadanounigram.check_existence" title="tadanounigram.check_existence"><code class="xref py py-func docutils literal notranslate"><span class="pre">tadanounigram.check_existence()</span></code></a>
+<a class="reference internal" href="#tadanounigram.frequency" title="tadanounigram.frequency"><code class="xref py py-func docutils literal notranslate"><span class="pre">tadanounigram.frequency()</span></code></a>
+<a class="reference internal" href="#tadanounigram.Frequency" title="tadanounigram.Frequency"><code class="xref py py-class docutils literal notranslate"><span class="pre">tadanounigram.Frequency</span></code></a></p>
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="tadanounigram documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, wbydo.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            LANGUAGE:'ja',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
