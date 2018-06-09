@@ -3,7 +3,7 @@ tadanounigram documentation
 日本語の文字1-gramを送出するパッケージ
 
 | GitHub: https://github.com/wbydo/tadanounigram
-| Pypi:
+| Pypi: https://pypi.org/project/tadanounigram/
 
 Installation
 -------------
