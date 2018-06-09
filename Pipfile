@@ -7,6 +7,13 @@ name = "pypi"
 setuptools = "*"
 
 [dev-packages]
+sphinx = "*"
+sphinx-rtd-theme = "*"
+twine = "*"
 
 [requires]
 python_version = "3.6"
+
+[scripts]
+apidoc = "sphinx-apidoc -f -o ./source ./tadanounigram"
+build = "sphinx-build -a ./source ./docs"
