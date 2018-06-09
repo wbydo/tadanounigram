@@ -1,7 +1,8 @@
 # tadanounigram
 simple KATAKANA 1-gram
 
-Document: https://wbydo.github.io/tadanounigram/
+- Documentation: https://wbydo.github.io/tadanounigram/
+- PyPi: https://pypi.org/project/tadanounigram/
 
 ## Installation
 ``%pip install tadanounigram``
